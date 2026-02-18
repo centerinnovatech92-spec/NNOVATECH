@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Empresa | Soluciones Tecnológicas</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/inicio.css">
+
+  <!-- SEO y Open Graph -->
+  <meta name="description" content="Soluciones tecnológicas personalizadas: programación, electrónica, diseño y capacitación.">
+  <meta property="og:title" content="Tu Empresa | Soluciones Tecnológicas">
+  <meta property="og:description" content="Transformamos ideas en proyectos tecnológicos sólidos y escalables.">
+  <meta property="og:image" content="img/ll.png">
+</head>
+<body>
+
+  <!-- NAVBAR FIJA -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div id="hamburger" aria-label="Menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <span class="nav-logo">CENTER INNOVATECH</span>
+      <ul class="nav-links responsive" id="nav-menu">
+        <li><button id="logout-link">Cerrar Sesión 🔒</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MENSAJE DE BIENVENIDA -->
+  <div id="welcome-toast" role="status">¡Bies <strong>CENTER INNOVATECH </strong>!</div>
+
+  <!-- SECCIÓN QUIÉNES SOMOS -->
+  <section class="about-section" id="quienes">
+    <div class="about-container">
+      <div class="about-text hidden">
+        <div class="logo-container">
+          <img src="img/ll.png" alt="Logo de la Empresa" class="logo">
+        </div>
+        <span class="tag">Nuestra Empresa</span>
+        <h2>
+          Desarrollamos soluciones <span class="highlight">tecnológicas</span> con visión estratégica.
+        </h2>
+        <p>
+          Somos un equipo multidisciplinario especializado en programación,
+          electrónica, diseño y capacitación. Integramos conocimiento técnico
+          y enfoque profesional para transformar ideas en proyectos sólidos,
+          funcionales y escalables.
+        </p>
+        <button class="btn-minimal" id="btnServicios">Explorar Servicios</button>
+      </div>
+      <div class="about-video">
+        <video autoplay muted loop playsinline poster="img/video-poster.jpg">
+          <source src="Vid/iss.mp4" type="video/mp4">
+          Tu navegador no soporta video.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN SERVICIOS -->
+  <section id="servicios">
+    <h2 class="services-title section-title">Nuestros Servicios</h2>
+    <div class="services-container">
+      <div class="service-card hidden">
+        <div class="service-icon">💻</div>
+        <h3>Programación</h3>
+        <p>Software a medida, apps web y móviles optimizadas.</p>
+      </div>
+      <div class="service-card hidden"> 
+        <div class="service-icon">🔌</div>
+        <h3>Electrónica</h3>
+        <p>Prototipos electrónicos, IoT y sistemas embebidos innovadores.</p>
+      </div>
+      <div class="service-card hidden">
+        <div class="service-icon">🎨</div>
+        <h3>Diseño</h3>
+        <p>Interfaces atractivas, branding y experiencia visual efectiva.</p>
+      </div>
+      <div class="service-card hidden">
+        <div class="service-icon">📚</div>
+        <h3>Capacitación</h3>
+        <p>Cursos, talleres y mentorías para empresas y particulares.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN ESTADÍSTICAS -->
+  <section class="stats-section" id="estadisticas">
+    <h2 class="section-title">Nuestros Logros</h2>
+    <div class="stats-container">
+      <div class="stat-card hidden">
+        <div class="stat-icon">💻</div>
+        <div class="stat-number" data-target="120">0</div>
+        <p>Proyectos Completados</p>
+      </div>
+      <div class="stat-card hidden">
+        <div class="stat-icon">🌐</div>
+        <div class="stat-number" data-target="50">0</div>
+        <p>Clientes Satisfechos</p>
+      </div>
+      <div class="stat-card hidden">
+        <div class="stat-icon">🏆</div>
+        <div class="stat-number" data-target="15">0</div>
+        <p>Premios Recibidos</p>
+      </div>
+      <div class="stat-card hidden">
+        <div class="stat-icon">📈</div>
+        <div class="stat-number" data-target="200">0</div>
+        <p>Horas de Capacitación</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN TESTIMONIOS -->
+  <section class="testimonials-section" id="testimonios">
+    <h2 class="section-title">Testimonios</h2>
+    <div class="testimonials-container">
+      <div class="testimonial-card hidden">
+        <p>"Excelente servicio, el equipo es muy profesional y creativo."</p>
+        <span>- Juan Pérez</span>
+      </div>
+      <div class="testimonial-card hidden">
+        <p>"Nuestros proyectos se han ejecutado perfectamente, superando expectativas."</p>
+        <span>- María López</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CLIENTES -->
+  <section class="clients-section" id="clientes">
+    <h2 class="section-title">Nuestros Clientes</h2>
+    <div class="clients-logos">
+      <img src="img/client1.png" alt="Logo Cliente 1">
+      <img src="img/client2.png" alt="Logo Cliente 2">
+      <img src="img/client3.png" alt="Logo Cliente 3">
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section">
+    <div class="cta-container">
+      <h2>¿Listo para trabajar con nosotros?</h2>
+      <p>Contáctanos y llevemos tu proyecto al siguiente nivel.</p>
+      <button class="btn-minimal" id="cta-contact">Contáctanos</button>
+    </div>
+  </section>
+
+  <!-- MODAL CONTACTO -->
+  <div id="contact-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <span class="close" aria-label="Cerrar">&times;</span>
+      <h2>Contáctanos</h2>
+      <form id="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" required></textarea>
+        <button type="submit" class="btn-minimal">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
